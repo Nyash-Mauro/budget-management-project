@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+/* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    list-style: none;
+    color: rgb(0, 0, 0);
+   }
+   .menu li:hover {
+    background-color: #42B585;;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li{
+    padding: 5px 14px;
+   }
+    .menu a {
+    color: rgb(0, 0, 0);
+    padding-right: 20px;
+   }
+
+.navbar .logo img{
+  margin-left: 50px;
+    width: 120px;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px; */
+    background-color: #F4F4F4;
+    color: #fff;
+    height: 10vh;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+
+/* HEADINGS */
+
+.headings{
+    display: flex;
+    font-size: 12px;
+    color: rgb(55, 50, 50);
+ padding-top: 50px;
+}
+
+.tax a{
+    color:#2f2a2a;
+    padding-left: 400px;
+}
+
+.bill a{
+    color:#2f2a2a;
+    padding-left: 100px;
+}
+
+.btn{
+    margin-left: 20%;
+    margin-top: 70px;
+    color:#42B585;
+}
+
+.btn h3{
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+.btn button{
+    padding: 9px 50px;
+    border: none;
+    background-color: #dad8d8;
+}
+
+.btn input{
+    padding: 8px 150px;
+    border: none;
+    background-color: #f4f4f4;
+}
+
+input:focus {
+    border: 1px solid #42B585;
+}
+
+.container{
+    margin-top: 40px;
+}
+
+.one input{
+    padding: 8px 10px;
+    border: 1px solid #42B585;
+}
+
+.one{
+margin-left: 20%;
+margin-top: 10px;
+}
+
+p{
+    padding-left: 20%;
+}
+
+#amount{
+    margin-left: 30px;
+}
+
+/* Net pay */
+.netpay{
+    display: flex;
+}
+.netpay p{
+   padding-top: 10px;
+   font-weight: bold;
+}
+.netpay .one{
+    margin-left: 330px;
+}
+
+/* NSSF Contribution */
+    .nssfcontrib{
+        display: flex;
+    }
+    .nssfcontrib p{
+        padding-top: 15px;
+        font-weight: bold;
+    }
+    .nssfcontrib .one{
+        margin-left: 253px;
+    }
+    
+/* Taxable income */
+    .taxincome{
+        display: flex;
+    }
+    .taxincome p{
+        padding-top: 15px;
+        font-weight: bold;
+    }
+    .taxincome .one{
+        margin-left: 274px;
+    }
+
+
+/* Personal Relief  */
+    .personalrelief{
+        display: flex;
+    }
+    .personalrelief p{
+        padding-top: 15px;
+        font-weight: bold;
+    }
+    .personalrelief .one{
+        margin-left: 275px;
+    }
+
+/* Tax before Relief */
+    .taxbeforerelief{
+        display: flex;
+    }
+    .taxbeforerelief p{
+        padding-top: 20px;
+        font-weight: bold;
+    }
+    .taxbeforerelief .one{
+        margin-left: 263px;
+    }
+
+/* Insurance/NHIF Relief  */
+    .insurancerelief{
+        display: flex;
+    }
+    .insurancerelief p{
+        padding-top: 20px;
+        font-weight: bold;
+    }
+    .insurancerelief .one{
+       margin-left: 225px;
+    }
+
+/* PAYE */
+    .paye{
+        display: flex;
+    }
+    .paye p{
+        padding-top: 20px;
+        font-weight: bold;
+    }
+    .paye .one{
+        margin-left: 347px;
+    }
+
+/* NHIF Contribution  */
+    .contribution{
+            display: flex;
+        }
+    .contribution p{
+            padding-top: 20px;
+            font-weight: bold;
+        }
+
+/* MANAGE */
+.manage{
+    padding-left:50% ;
+    padding-top: 25px;
+    color:#006FFD ;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: #F4F4F4;
+    background-attachment: fixed;
+    margin-top: 8%;
+  }
+
+  .footer .logo img{
+    height: 5rem;
+    width: 120px;
+}
+
+.credit{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+
+
+
