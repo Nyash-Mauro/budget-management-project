@@ -1,103 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/aim.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="Css/style.css">
 </head>
+
 <body>
-
-<nav class="navbar">
-        <!-- LOGO -->
-        <a href="https://natujenge.ke/" class="logo"><img src="resources/natujenge.svg" alt="natujenge"></a>
-          <!-- NAVIGATION MENUS -->
-          <div class="menu">
-            <li><a href="https://www.meliora.co.ke/articles/nvrjgtnsgh5ophs6mm">About-virtual-bootcamp</a></li>
-          </div>
-</nav>
-
-<!-- HEADINGS -->
-<div class="headings"> 
-    <h1 class="tax">  <a href="index.html"> Tax Calculator </a> </h1>
-    <h1 class="bill"> <a href="main.html"> Bill manager </a> </h1>
-</div>
-
-    
-<div class="btn">
-    <h3>Gross Salary</h3>
-    <button> KSH </button><span><input type="text"></span>
-</div>
-
-
-<div class="container">
-
-<!-- Rent  -->
-<div class="rent">
-    <p> Rent </p> 
-    <div class="one">
-        <label for="Amount" class="label"> Ksh </label>
-        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
+        <div class="btn">
+        <h3>Gross Salary</h3>
+        <button> KSH </button><span><input type="text"></span>
     </div>
-</div>
+    <div class="wrappers">
+        <div class="modalForm">
+            <div class="actionBtns">
+                <button class="actionBtn signupBtn">Tax Calculator</button>
+                <button class="actionBtn loginBtn">Bill manager</button>
+                <button class="moveBtn">Bill manager</button>
+            </div>
+            <div class="userForm">
+                <Form action="" class="form signup signupForm">
+                    <section class="tax__calculator">
+                        <div class="ccontainer-sm">
 
-<!-- Entertainment -->
-<div class="entertainment">
-    <p> Entertainment </p>
-    <div class="one">
-        <label for="Amount" class="label"> Ksh </label>
-        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
+                            <!-- Net pay -->
+                            <div class="netpay">
+                                <p> Net pay</p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                    
+                            <!-- NSSF Contribution  -->
+                            <div class="nssfcontrib">
+                                <p> NSSF Contribution </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                    
+                            <!-- Taxable income  -->
+                            <div class="taxincome">
+                                <p> Taxable income </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                    
+                            <!-- Tax before Relief  -->
+                            <div class="taxbeforerelief">
+                                <p> Tax before Relief </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                    
+                            <!-- Personal Relief -->
+                            <div class="personalrelief">
+                                <p> Personal Relief </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                    
+                            <!-- Insurance/NHIF Relief -->
+                            <div class="insurancerelief">
+                                <p> Insurance/NHIF Relief </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                    
+                            <!-- PAYE -->
+                            <div class="paye">
+                                <p> PAYE </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                    
+                            <!-- NHIF Contribution  -->
+                            <div class="contribution">
+                                <p> NHIF Contribution </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <h3>Gross Salary</h3>
+                                <button> KSH </button><span><input type="text"></span>
+                            </div>
+                    
+                    
+                            <div class="container">
+                    
+                                <!-- Rent  -->
+                                <div class="rent">
+                                    <p> Rent </p>
+                                    <div class="one">
+                                        <label for="Amount" class="label"> Ksh </label>
+                                        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                    </div>
+                                </div>
+                    
+                                <!-- Entertainment -->
+                                <div class="entertainment">
+                                    <p> Entertainment </p>
+                                    <div class="one">
+                                        <label for="Amount" class="label"> Ksh </label>
+                                        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                    </div>
+                                </div>
+                    
+                                <!-- Taxable income  -->
+                                <div class="food">
+                                    <p> Food </p>
+                                    <div class="one">
+                                        <label for="Amount" class="label"> Ksh </label>
+                                        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                    </div>
+                                </div>
+                    
+                                <!-- Shopping -->
+                                <div class="shopping">
+                                    <p> Shopping </p>
+                                    <div class="one">
+                                        <label for="Amount" class="label"> Ksh </label>
+                                        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                    </div>
+                    
+                                </div>
+                                <div class="output">
+                                    <input id="amount" name="Amount">
+                                    <input id="amount" name="Amount">
+                                </div>
+                            </div>
+                    
+                            <!-- BUTTON -->
+                            <button class="add">Add</button>
+                    
+                            <!-- BALANCE  -->
+                            <div class="balance">
+                                <p> Balance </p>
+                                <div class="one">
+                                    <label for="Amount" class="label"> Ksh </label>
+                                    <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00">
+                                </div>
+                            </div>
+                        </div>  
+                    </section>
+                </Form>
+
+                <Form action="" class="form login">
+                    <div class="container-sm">
+
+                        <!-- Rent  -->
+                        <div class="rent">
+                            <p> Rent </p> 
+                            <div class="one">
+                                <label for="Amount" class="label"> Ksh </label>
+                                <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
+                            </div>
+                        </div>
+                        
+                        <!-- Entertainment -->
+                        <div class="entertainment">
+                            <p> Entertainment </p>
+                            <div class="one">
+                                <label for="Amount" class="label"> Ksh </label>
+                                <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
+                            </div>
+                        </div>
+                        
+                        <!-- Taxable income  -->
+                        <div class="food">
+                            <p> Food </p>
+                            <div class="one">
+                                <label for="Amount" class="label"> Ksh </label>
+                                <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
+                            </div>
+                        </div>
+                        
+                        <!-- Shopping -->
+                        <div class="shopping">
+                            <p> Shopping </p>
+                            <div class="one">
+                                <label for="Amount" class="label"> Ksh </label>
+                                <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
+                            </div>
+                          
+                        </div>
+                        <div class="output">
+                            <input id="amount" name="Amount"  >    
+                            <input  id="amount" name="Amount" >    
+                            </div>
+                        </div>
+                </Form>
+            </div>
+        </div>
     </div>
-</div>
-
-<!-- Taxable income  -->
-<div class="food">
-    <p> Food </p>
-    <div class="one">
-        <label for="Amount" class="label"> Ksh </label>
-        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
-    </div>
-</div>
-
-<!-- Shopping -->
-<div class="shopping">
-    <p> Shopping </p>
-    <div class="one">
-        <label for="Amount" class="label"> Ksh </label>
-        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
-    </div>
-  
-</div>
-<div class="output">
-    <input id="amount" name="Amount"  >    
-    <input  id="amount" name="Amount" >    
-    </div>
-</div>
-
-<!-- BUTTON -->
-  <button class="add">Add</button>  
-
-  <!-- BALANCE  -->
-<div class="balance">
-    <p> Balance </p> 
-    <div class="one">
-        <label for="Amount" class="label"> Ksh </label>
-        <input type="number" id="amount" name="Amount" placeholder="Ksh 0.00" >    
-    </div>
-</div>
-</div>
-
-<!-- FOOTER -->
-
-<div class="footer">
-    <a href="https://natujenge.ke/" class="logo"><img src="resources/natujenge.svg" alt="natujenge"></a>
-    <hr size="10">
-    <div class="credit"> Powered by <span>Natujenge</span> | 2022</div>
-</div>
-
-
-
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

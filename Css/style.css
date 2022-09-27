@@ -1,70 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-decoration: none;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-*{
-    font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    transition: .2s linear;
-    text-decoration: none;
-   align-items: center;
 }
 
 /* NAVBAR MENU */
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-    list-style: none;
-    color: rgb(0, 0, 0);
-   }
-   .menu li:hover {
-    background-color: #42B585;
-    border-radius: 5px;
-    transition: 0.3s ease;
-   }
-   .menu li{
-    padding: 5px 14px;
-   }
-    .menu a {
-    color: rgb(0, 0, 0);
-    padding-right: 20px;
-   }
-
-.navbar .logo img{
-  margin-left: 50px;
-    width: 120px;
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  list-style: none;
+  color: rgb(0, 0, 0);
+}
+.menu li:hover {
+  background-color: #42b585;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.menu li {
+  padding: 5px 14px;
+}
+.menu a {
+  color: rgb(0, 0, 0);
+  padding-right: 20px;
 }
 
-.header .navbar a{
-    margin:0 1rem;
-    font-size: 1.6rem;
-    color:#fff;
+.navbar .logo img {
+  margin-left: 50px;
+  width: 120px;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 /* NAVBAR STYLING STARTS */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 20px; */
-    background-color: #F4F4F4;
-    color: #fff;
-    height: 10vh;
-   }
-   .nav-links a {
-    color: #fff;
-   }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px; */
+  background-color: #f4f4f4;
+  color: #fff;
+  height: 10vh;
+}
+.nav-links a {
+  color: #fff;
+}
 
 /* HEADINGS */
 
-.headings{
-    display: flex;
-    font-size: 12px;
-    color: rgb(55, 50, 50);
- padding-top: 50px;
+.headings {
+  display: flex;
+  font-size: 12px;
+  color: rgb(55, 50, 50);
 }
 
+.modalForm {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.actionBtns {
+  width: 80%;
+  background-color: blue;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 50px;
+}
+.actionBtn {
+  padding: 1rem;
+  width: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 50px;
+  counter-reset: #fff;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.moveBtn {
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  margin: 2px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.rightBtn {
+  transform: translateX(98%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form {
+  display: none;
+}
+.signupForm {
+  display: block;
+}
+.loginForm {
+  display: block;
+}
 .tax a{
     color:#2f2a2a;
     padding-left: 400px;
@@ -185,7 +237,7 @@ p{
         display: flex;
     }
     .taxbeforerelief p{
-        padding-top: 20px;
+        position:relative;
         font-weight: bold;
     }
     .taxbeforerelief .one{
@@ -197,7 +249,7 @@ p{
         display: flex;
     }
     .insurancerelief p{
-        padding-top: 20px;
+        position:relative;
         font-weight: bold;
     }
     .insurancerelief .one{
@@ -209,11 +261,11 @@ p{
         display: flex;
     }
     .paye p{
-        padding-top: 20px;
+        position:relative;
         font-weight: bold;
     }
     .paye .one{
-        margin-left: 347px;
+        position: relative;
     }
 
 /* NHIF Contribution  */
@@ -221,11 +273,11 @@ p{
             display: flex;
         }
     .contribution p{
-            padding-top: 20px;
+            position:relative;
             font-weight: bold;
         }
     .contribution .one{
-        margin-left: 255px;
+        position: relative;
         }
         
 /* MANAGE */
@@ -254,7 +306,7 @@ p{
     cursor: pointer;
     background-color: #000000;
     border-radius: 5px;
-    margin-left:60% ;
+    position: relative;
     margin-bottom: 20px;
   }
 
@@ -264,19 +316,18 @@ p{
 
 }
 .output{
-    margin-left: 25%;
-    margin-top: 50px;
+    position: relative;
 }
 /* Rent */
 .rent {
     display: flex;
 }
 .rent p{
-    padding-top: 20px;
+    position: relative;
     font-weight: bold;
 }
 .rent .one{
-margin-left: 293px;
+    position: relative;
 }
 
 /* Entertainment */
@@ -284,7 +335,7 @@ margin-left: 293px;
     display: flex;
 }
 .entertainment p{
-    padding-top: 20px;
+    position:relative;
     font-weight: bold;
 }
 .entertainment .one{
@@ -296,7 +347,7 @@ margin-left: 223px;
     display: flex;
 }
 .food p{
-    padding-top: 20px;
+    position:relative;
     font-weight: bold;
 }
 .food .one{
@@ -308,11 +359,10 @@ margin-left: 288px;
     display: flex;
 }
 .shopping  p{
-    padding-top: 20px;
     font-weight: bold;
 }
 .shopping .one{
-margin-left: 255px;
+    position: relative;
 }
 
 /* Balance */
@@ -320,36 +370,32 @@ margin-left: 255px;
     display: flex;
 }
 .balance p{
-    padding-top: 20px;
+    position:relative;
     font-weight: bold;
 }
 .balance .one{
-margin-left: 255px;
+    position: relative;
 }
 
 
 
 /* FOOTER */
 .footer {
-    text-align: center;
-    bottom:0;
-    left:0;
-    width:100%;
-    background-color: #F4F4F4;
-    background-attachment: fixed;
-    margin-top: 8%;
-  }
-
-  .footer .logo img{
-    height: 5rem;
-    width: 120px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  background-attachment: fixed;
+  margin-top: 8%;
 }
 
-.credit{
-    padding-top: 15px;
-    padding-bottom: 8px;
+.footer .logo img {
+  height: 5rem;
+  width: 120px;
 }
 
-
-
-
+.credit {
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
